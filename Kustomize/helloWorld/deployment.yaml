@@ -1,0 +1,57 @@
+# VIOLATION: Policy ID: lacework-iac-k8s-security-1
+# VIOLATION: Title: Apply security context to pods and containers
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: None
+
+# VIOLATION: Policy ID: lacework-iac-k8s-workload-1
+# VIOLATION: Title: Container image should be versioned
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: None
+
+# VIOLATION: Policy ID: lacework-iac-k8s-workload-3
+# VIOLATION: Title: Minimize the execution of container workloads with the NET_RAW capability
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: None
+
+# VIOLATION: Policy ID: lacework-iac-k8s-security-2
+# VIOLATION: Title: Pods should forbid containers with allowPrivilegeEscalation
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: None
+
+# VIOLATION: Policy ID: ckv-k8s-21
+# VIOLATION: Title: The default namespace should not be used
+# VIOLATION: Severity: Low
+# VIOLATION: Compliance: CIS
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: the-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      deployment: hello
+  template:
+    metadata:
+      labels:
+        deployment: hello
+    spec:
+      containers:
+      - name: the-container
+        image: monopole/hello:1
+        command: ["/hello",
+                  "--port=8080",
+                  "--enableRiskyFeature=$(ENABLE_RISKY)"]
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ALT_GREETING
+          valueFrom:
+            configMapKeyRef:
+              name: the-map
+              key: altGreeting
+        - name: ENABLE_RISKY
+          valueFrom:
+            configMapKeyRef:
+              name: the-map
+              key: enableRisky

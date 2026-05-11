@@ -1,0 +1,11 @@
+# VIOLATION: Policy ID: ckv-k8s-21
+# VIOLATION: Title: The default namespace should not be used
+# VIOLATION: Severity: Low
+# VIOLATION: Compliance: CIS
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: the-map
+data:
+  altGreeting: "Good Morning!"
+  enableRisky: "false"
