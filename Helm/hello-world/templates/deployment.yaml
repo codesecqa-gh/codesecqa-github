@@ -1,0 +1,77 @@
+apiVersion: apps/v1
+kind: Deployment
+# VIOLATION: Policy ID: ckv-k8s-10
+# VIOLATION: Title: CPU requests should be set
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: None
+
+# VIOLATION: Policy ID: ckv-k8s-38
+# VIOLATION: Title: Ensure that Service Account Tokens are only mounted where necessary
+# VIOLATION: Severity: Low
+# VIOLATION: Compliance: CIS
+
+# VIOLATION: Policy ID: ckv-k8s-31
+# VIOLATION: Title: Ensure that the seccomp profile is set to docker/default or runtime/default
+# VIOLATION: Severity: Low
+# VIOLATION: Compliance: CIS
+
+# VIOLATION: Policy ID: ckv-k8s-15
+# VIOLATION: Title: Image Pull Policy should be Always
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: CIS
+
+# VIOLATION: Policy ID: ckv-k8s-13
+# VIOLATION: Title: Memory limits should be set
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: None
+
+# VIOLATION: Policy ID: ckv-k8s-12
+# VIOLATION: Title: Memory requests should be set
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: None
+
+# VIOLATION: Policy ID: ckv-k8s-37
+# VIOLATION: Title: Minimize the admission of containers with capabilities assigned
+# VIOLATION: Severity: Medium
+# VIOLATION: Compliance: CIS
+
+# VIOLATION: Policy ID: ckv-k8s-21
+# VIOLATION: Title: The default namespace should not be used
+# VIOLATION: Severity: Low
+# VIOLATION: Compliance: CIS
+
+# VIOLATION: Policy ID: ckv-k8s-22
+# VIOLATION: Title: Use read-only filesystem for containers where possible
+# VIOLATION: Severity: High
+# VIOLATION: Compliance: None
+metadata:
+  name: {{ include "hello-world.fullname" . }}
+  labels:
+{{- include "hello-world.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+{{- include "hello-world.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+{{- include "hello-world.selectorLabels" . | nindent 8 }}
+    spec:
+      serviceAccountName: {{ include "hello-world.serviceAccountName" . }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
