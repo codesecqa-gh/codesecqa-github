@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "j9RjLR1n6aI=",
+  "success": true,
+  "projectFilePath": "/workspace/Dotnet10App/Dotnet10App.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Newtonsoft.Json' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "projectPath": "/workspace/Dotnet10App/Dotnet10App.csproj",
+      "warningLevel": 1,
+      "filePath": "/workspace/Dotnet10App/Dotnet10App.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
