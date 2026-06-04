@@ -1,0 +1,53 @@
+[[package]]
+name = "django"
+version = "2.2.0"
+description = "A high-level Python Web framework."
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "flask"
+version = "1.0"
+description = "A simple framework for building complex web applications."
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "requests"
+version = "2.19.1"
+description = "Python HTTP for Humans."
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pyyaml"
+version = "3.13"
+description = "YAML parser and emitter for Python"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "sqlalchemy"
+version = "1.2.0"
+description = "Database Abstraction Library"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "jinja2"
+version = "2.10"
+description = "A small but fast and easy to use stand-alone template engine."
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "urllib3"
+version = "1.24.1"
+description = "HTTP library with thread-safe connection pooling"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.11"
+content-hash = "0000000000000000000000000000000000000000000000000000000000000000"

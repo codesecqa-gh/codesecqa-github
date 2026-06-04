@@ -1,0 +1,11 @@
+{
+  "name": "example/sca-parity-php",
+  "description": "SCA parity test payload",
+  "require": {
+    "symfony/http-foundation": "2.7.0",
+    "laravel/framework": "5.5.0",
+    "guzzlehttp/guzzle": "6.2.0",
+    "monolog/monolog": "1.18.0",
+    "twig/twig": "1.35.0"
+  }
+}

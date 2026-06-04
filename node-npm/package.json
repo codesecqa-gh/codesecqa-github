@@ -1,0 +1,12 @@
+{
+  "name": "sca-parity-node-npm",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "lodash": "4.17.11",
+    "minimist": "0.0.8",
+    "jquery": "1.12.4",
+    "express": "4.16.0",
+    "axios": "0.18.0"
+  }
+}

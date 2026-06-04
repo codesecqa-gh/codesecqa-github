@@ -1,0 +1,5 @@
+workspace(name = "sca_parity_java_bazel")
+
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+# Smoke-level Bazel SCA payload. FortiCNAPP docs list Bazel support, but exact lockfile parsing may vary.

@@ -1,0 +1,17 @@
+[[package]]
+name = "openssl"
+version = "0.9.24"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "time"
+version = "0.1.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rust-sca-test"
+version = "0.1.0"
+dependencies = [
+ "openssl",
+ "time",
+]
