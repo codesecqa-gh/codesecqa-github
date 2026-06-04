@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lR3B7tA0kAM6fvJooS0USqWckyj1hD6JVBPLEMxmXGXJBkyxfV1g+m23cLPlrWyT5QcanzTYJiQtj0aP6uwgGw==",
+  "success": true,
+  "projectFilePath": "/workspace/DotnetCore6App/DotnetCore6App.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
