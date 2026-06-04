@@ -1,0 +1,10 @@
+github.com/gin-gonic/gin v1.3.0 h1:placeholder
+github.com/gin-gonic/gin v1.3.0/go.mod h1:placeholder
+github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:placeholder
+github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:placeholder
+golang.org/x/crypto v0.0.0-20200220183623-bac4c82f6975 h1:placeholder
+golang.org/x/crypto v0.0.0-20200220183623-bac4c82f6975/go.mod h1:placeholder
+github.com/gorilla/websocket v1.4.0 h1:placeholder
+github.com/gorilla/websocket v1.4.0/go.mod h1:placeholder
+gopkg.in/yaml.v2 v2.2.2 h1:placeholder
+gopkg.in/yaml.v2 v2.2.2/go.mod h1:placeholder

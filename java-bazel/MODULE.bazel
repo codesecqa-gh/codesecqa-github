@@ -1,0 +1,3 @@
+module(name = "sca_parity_java_bazel", version = "1.0.0")
+
+bazel_dep(name = "rules_jvm_external", version = "6.1")

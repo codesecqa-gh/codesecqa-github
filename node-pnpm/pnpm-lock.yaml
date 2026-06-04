@@ -1,0 +1,35 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  lodash:
+    specifier: 4.17.11
+    version: 4.17.11
+  minimist:
+    specifier: 0.0.8
+    version: 0.0.8
+  jquery:
+    specifier: 1.12.4
+    version: 1.12.4
+  express:
+    specifier: 4.16.0
+    version: 4.16.0
+  axios:
+    specifier: 0.18.0
+    version: 0.18.0
+
+packages:
+  /lodash@4.17.11:
+    resolution: {integrity: sha512-placeholder}
+    dev: false
+  /minimist@0.0.8:
+    resolution: {integrity: sha512-placeholder}
+    dev: false
+  /jquery@1.12.4:
+    resolution: {integrity: sha512-placeholder}
+    dev: false
+  /express@4.16.0:
+    resolution: {integrity: sha512-placeholder}
+    dev: false
+  /axios@0.18.0:
+    resolution: {integrity: sha512-placeholder}
+    dev: false

@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionpack (4.2.0)
+    actionview (4.2.0)
+    activesupport (4.2.0)
+    loofah (2.2.2)
+    nokogiri (1.6.8)
+    rack (1.6.0)
+    rails (4.2.0)
+    sinatra (1.4.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  loofah (= 2.2.2)
+  nokogiri (= 1.6.8)
+  rack (= 1.6.0)
+  rails (= 4.2.0)
+  sinatra (= 1.4.7)
+
+BUNDLED WITH
+   1.17.3

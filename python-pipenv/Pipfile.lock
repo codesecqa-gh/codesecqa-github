@@ -1,0 +1,42 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.11"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "django": {
+            "version": "==2.2.0"
+        },
+        "flask": {
+            "version": "==1.0"
+        },
+        "requests": {
+            "version": "==2.19.1"
+        },
+        "pyyaml": {
+            "version": "==3.13"
+        },
+        "sqlalchemy": {
+            "version": "==1.2.0"
+        },
+        "jinja2": {
+            "version": "==2.10"
+        },
+        "urllib3": {
+            "version": "==1.24.1"
+        }
+    },
+    "develop": {}
+}

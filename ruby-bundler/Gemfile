@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem "rails", "4.2.0"
+gem "rack", "1.6.0"
+gem "nokogiri", "1.6.8"
+gem "sinatra", "1.4.7"
+gem "loofah", "2.2.2"

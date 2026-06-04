@@ -1,0 +1,11 @@
+{
+    "version": "0.5",
+    "requires": [
+        "openssl/1.0.2u",
+        "zlib/1.2.11",
+        "libxml2/2.9.4",
+        "poco/1.9.4"
+    ],
+    "build_requires": [],
+    "python_requires": []
+}
